@@ -2,6 +2,7 @@ openapi: 3.0.0
 info:
   title: 7ofus site interaction
   version: '1.0'
+  description: 7ofus site interaction
 servers:
   - url: 'http://localhost:3000'
 paths:
@@ -29,7 +30,7 @@ paths:
                 - password
   /register:
     post:
-      summary: Login user into the site
+      summary: Register user in the site
       tags: []
       responses:
         '200':
@@ -57,5 +58,6 @@ paths:
                 - name
                 - email
                 - password
+      description: ''
 components:
   schemas: {}
